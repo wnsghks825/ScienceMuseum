@@ -150,14 +150,14 @@ RectTransform:
   m_GameObject: {fileID: 306069366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 751936772}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130, y: -130}
+  m_AnchoredPosition: {x: 100, y: -101}
   m_SizeDelta: {x: 174, y: 183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &306069368
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -831,7 +831,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -885,6 +885,7 @@ GameObject:
   - component: {fileID: 1693891377}
   - component: {fileID: 1693891379}
   - component: {fileID: 1693891378}
+  - component: {fileID: 1693891380}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -909,7 +910,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2562, y: 1602.501}
+  m_SizeDelta: {x: 2562, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1693891378
 MonoBehaviour:
@@ -948,6 +949,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693891376}
   m_CullTransparentMesh: 0
+--- !u!114 &1693891380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693891376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 1
+  m_AspectRatio: 1.598751
 --- !u!1 &1998017916
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,14 +990,14 @@ RectTransform:
   m_GameObject: {fileID: 1998017916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.85}
+  m_LocalScale: {x: 0.68, y: 0.68, z: 0.68}
   m_Children: []
   m_Father: {fileID: 751936772}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -179}
+  m_AnchoredPosition: {x: 0, y: -152}
   m_SizeDelta: {x: 1174, y: 462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998017918

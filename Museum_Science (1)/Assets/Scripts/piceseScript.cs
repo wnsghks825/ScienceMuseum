@@ -13,17 +13,17 @@ public class piceseScript : MonoBehaviour
     void Start()
     {
         RightPosition = transform.position;
-        rightRange = Random.Range(8f, 11.5f);
-        leftRange = Random.Range(-5f, -3.5f);
-        transform.position = new Vector3(Random.Range(leftRange, rightRange), Random.Range(2, -7));
+        rightRange = Random.Range(8f, 9.5f);
+        leftRange = Random.Range(-4f, -3.5f);
+        transform.position = new Vector3(Random.Range(leftRange, rightRange), Random.Range(-3, -6));
         if (transform.position.x <= 4.5f)
         {
-            transform.position = new Vector3(leftRange, Random.Range(1.5f, -6));
+            transform.position = new Vector3(leftRange, Random.Range(0f, -6));
         }
         //x의 위치는 leftRange가 될 수도 있고 right도 될 수 있다. 
         else if (transform.position.x >= 0.5f)
         {
-            transform.position = new Vector3(rightRange, Random.Range(1.5f, -6));
+            transform.position = new Vector3(rightRange, Random.Range(0f, -6));
         }
 
     }

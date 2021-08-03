@@ -33,7 +33,6 @@ public class SimpleMatch : MonoBehaviour
         canvas = GameObject.Find("UI").GetComponent<Canvas>();
         audioOK = GameObject.Find("퀴즈 맞춤").GetComponent<AudioSource>();
         audioWrong = GameObject.Find("퀴즈 틀림").GetComponent<AudioSource>();
-        mainCanvas = GameObject.Find("Canvas");
         Vector3 startPos = originalCard.transform.position;
         timeLeft = 60.0f;
 
@@ -66,14 +65,13 @@ public class SimpleMatch : MonoBehaviour
                 int index = j * gridCols + i;
                 int id = numbers[index];
                 Card.ChangeSprite(id, Images[id]);
-                
 
-                float posX = (3.54f * i) + startPos.x;
-                float posY = -(3.34f * j) + startPos.y;
+                float posX = (3 * i) + startPos.x;
+                float posY = -(3.75f * j) + startPos.y;
                 Card.transform.position = new Vector3(posX, posY, startPos.z);
-                Card.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                Card.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
                 flipImage.transform.position = new Vector3(posX, posY, startPos.z);
-                flipImage.transform.localScale = new Vector3(1f, 1f, 1f);
+                flipImage.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
             }
         }
     }
